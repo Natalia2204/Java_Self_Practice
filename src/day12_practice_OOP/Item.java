@@ -9,10 +9,9 @@ public class Item {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         if (name.isEmpty() || name.isBlank()) {
-            System.out.println("The name cannot be empty or blank.");
+            System.err.println("The name cannot be empty or blank.");
             System.exit(1);
         }
         boolean isSpecialChar;
@@ -20,10 +19,10 @@ public class Item {
 
         for (int i = 0; i < name.toCharArray().length; i++) {
             if (isSpecialChar = !Character.isLetterOrDigit(name.charAt(i))) {
-                System.out.println("The name cannot contain any special characters other than space.");
+                System.err.println("The name cannot contain any special characters other than space.");
                 System.exit(1);
-            } else if (isSpecialChar = !Character.isLetter(name.charAt(i))) {
-                System.out.println("The name must start with letters.");
+            } else if (isSpecialChar = !Character.isLetter(name.charAt(0))) {
+                System.err.println("The name must start with letters.");
                 System.exit(1);
             }
         }
@@ -40,7 +39,7 @@ public class Item {
 
     public void setUnitPrice(double unitPrice) {
         if (unitPrice < 0){
-            System.out.println("The unitPrice cannot be negative.");
+            System.err.println("The unitPrice cannot be negative.");
             System.exit(1);
         }
         this.unitPrice = unitPrice;
@@ -48,7 +47,7 @@ public class Item {
 
     public void setQuantity(int quantity) {
         if (quantity < 0){
-            System.out.println("The quantity cannot be negative.");
+            System.err.println("The quantity cannot be negative.");
             System.exit(1);
         }
         this.quantity = quantity;

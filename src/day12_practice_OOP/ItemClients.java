@@ -4,7 +4,7 @@ public class ItemClients {
     public static void main(String[] args) {
 
         Item item1 = new Item();
-        item1.setName("Pen");
+        item1.setName("Jen");
         item1.setUnitPrice(12.0);
         item1.setQuantity(10);
 
