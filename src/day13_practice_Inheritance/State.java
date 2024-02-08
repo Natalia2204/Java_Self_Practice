@@ -10,10 +10,13 @@ public class State {
 //Conditions for Encapsulation:
 //           - 'name', 'abbreviation', 'politicalParty', 'Governor', and 'senator' must not be null, empty, or blank.
 //           - 'population' must be greater than zero.
+
+
     public State(String name, String abbreviation, String politicalParty, String governor, String senator, int population) {
-        if(name == null || name.isEmpty() || name.isBlank() || abbreviation == null || abbreviation.isEmpty() || abbreviation.isBlank() ||
+
+        if (name == null || name.isEmpty() || name.isBlank() || abbreviation == null || abbreviation.isEmpty() || abbreviation.isBlank() ||
                 politicalParty == null || politicalParty.isEmpty() || politicalParty.isBlank() || governor == null || governor.isEmpty() || governor.isBlank() ||
-                senator == null || senator.isEmpty() || senator.isBlank()){
+                senator == null || senator.isEmpty() || senator.isBlank()) {
             System.err.println("name, abbreviation, politicalParty, Governor, senator must not be null, empty, or blank.");
             System.exit(1);
         }
@@ -21,6 +24,7 @@ public class State {
             System.err.println("The population must be greater than zero.");
             System.exit(1);
         }
+
         this.name = name;
         this.abbreviation = abbreviation;
         this.politicalParty = politicalParty;
@@ -50,6 +54,8 @@ public class State {
     }
 
     public void setPoliticalParty(String politicalParty) {
+
+
         this.politicalParty = politicalParty;
     }
 
@@ -79,7 +85,7 @@ public class State {
 
     @Override
     public String toString() {
-        return getName().getClass() + "{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", abbreviation='" + abbreviation + '\'' +
                 ", politicalParty='" + politicalParty + '\'' +
