@@ -1,4 +1,4 @@
-package m13_practice_Inheritance;
+package day13_practice_Inheritance;
 
 public class Samsung extends IPhone {
     public Samsung(String brand, String model, String size, double price, String color) {
@@ -9,9 +9,9 @@ public class Samsung extends IPhone {
 
         Samsung samsung1 = new Samsung("Samsung", "15", "7", 240, "White");
 
-        samsung1.call(456-78-65);
-        samsung1.text(655-82-34);
-        samsung1.faceTime(987-64-38);
+        samsung1.call(4567865);
+        samsung1.text(6558234);
+        samsung1.faceTime(9876438);
         System.out.println(samsung1.toString());
 
     }

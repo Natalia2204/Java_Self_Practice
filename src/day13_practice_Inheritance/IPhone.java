@@ -1,4 +1,4 @@
-package m13_practice_Inheritance;
+package day13_practice_Inheritance;
 
 public class IPhone {
 
@@ -79,7 +79,7 @@ public class IPhone {
     public  void text(int phoneNumber){
         System.out.println("texting to the number " + phoneNumber);
     }
-    public  void faceTime(int phoneNumber){
+    public  void faceTime(int  phoneNumber){
         System.out.println("facetiming to the number " + phoneNumber);
     }
 
