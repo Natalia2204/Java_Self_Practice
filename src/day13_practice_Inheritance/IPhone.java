@@ -9,15 +9,35 @@ public class IPhone {
     private String color;
 
 
+    public IPhone(String brand, String model, String size, double price, String color) {
+        if (brand == null || brand.isEmpty() || brand.isBlank()) {
+            System.err.println("The brand must not be null, empty, or blank.");
+            System.exit(1);
+        }
+        if (model == null || model.isEmpty() || model.isBlank()) {
+            System.err.println("The model must not be null, empty, or blank.");
+            System.exit(1);
+        }
+        if (color == null || color.isEmpty() || color.isBlank()) {
+            System.err.println("The color must not be null, empty, or blank.");
+            System.exit(1);
+        }
+        if (price < 0) {
+            System.err.println("The price must be greater than zero.");
+            System.exit(1);
+        }
+        this.brand = brand;
+        this.model = model;
+        this.size = size;
+        this.price = price;
+        this.color = color;
+    }
+
     public String getBrand() {
         return brand;
     }
 
     public void setBrand(String brand) {
-        if( brand == null || brand.isEmpty() || brand.isBlank()) {
-            System.out.println("The brand must not be null, empty, or blank.");
-            System.exit(1);
-        }
         this.brand = brand;
     }
 
@@ -26,10 +46,6 @@ public class IPhone {
     }
 
     public void setModel(String model) {
-        if( model == null || model.isEmpty() || model.isBlank()) {
-            System.out.println("The model must not be null, empty, or blank.");
-            System.exit(1);
-        }
         this.model = model;
     }
 
@@ -46,10 +62,6 @@ public class IPhone {
     }
 
     public void setPrice(double price) {
-        if (price < 0){
-            System.err.println("The price must be greater than zero.");
-            System.exit(1);
-        }
         this.price = price;
     }
 
@@ -58,28 +70,17 @@ public class IPhone {
     }
 
     public void setColor(String color) {
-        if( color == null || color.isEmpty() || color.isBlank()) {
-            System.out.println("The color must not be null, empty, or blank.");
-            System.exit(1);
-        }
         this.color = color;
     }
-
-    public IPhone(String brand, String model, String size, double price, String color) {
-        this.brand = brand;
-        this.model = model;
-        this.size = size;
-        this.price = price;
-        this.color = color;
-    }
-
-    public  void call(int phoneNumber){
+    public void call(int phoneNumber) {
         System.out.println("calling the number " + phoneNumber);
     }
-    public  void text(int phoneNumber){
+
+    public void text(int phoneNumber) {
         System.out.println("texting to the number " + phoneNumber);
     }
-    public  void faceTime(int  phoneNumber){
+
+    public void faceTime(int phoneNumber) {
         System.out.println("facetiming to the number " + phoneNumber);
     }
 

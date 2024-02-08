@@ -2,8 +2,9 @@ package day13_practice_Inheritance;
 
 public class Nokia extends IPhone {
     public static void main(String[] args) {
-        Nokia nokia = new Nokia("Nokia", "9A", "6", 160, "Blue" );
+        Nokia nokia = new Nokia("Nokia", "9A", "6", -160, "White" );
         System.out.println(nokia.toString());
+
         nokia.call(8769834);
         nokia.text(4568712);
         nokia.faceTime(3426743);
@@ -12,8 +13,6 @@ public class Nokia extends IPhone {
     public Nokia(String brand, String model, String size, double price, String color) {
         super(brand, model, size, price, color);
     }
-
-
 
 
     @Override

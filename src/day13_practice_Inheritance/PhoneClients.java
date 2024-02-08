@@ -3,7 +3,7 @@ package day13_practice_Inheritance;
 public class PhoneClients {
     public static void main(String[] args) {
 
-        IPhone iPhone = new IPhone("Iphone", "13", "8", 900, "Black");
+        IPhone iPhone = new IPhone("IPhone", "15", "8", 900, "Black");
         Samsung samsung = new Samsung("Samsung", "12", "9", 600, "White");
         Nokia nokia =new Nokia("Nokia", "15A", "7", 280,"Red");
 

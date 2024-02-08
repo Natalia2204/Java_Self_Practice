@@ -7,7 +7,7 @@ public class Samsung extends IPhone {
 
     public static void main(String[] args) {
 
-        Samsung samsung1 = new Samsung("Samsung", "15", "7", 240, "White");
+        Samsung samsung1 = new Samsung("Samsung", "12", "7", 240, "White");
 
         samsung1.call(4567865);
         samsung1.text(6558234);
