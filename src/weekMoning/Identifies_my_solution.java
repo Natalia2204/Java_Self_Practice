@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class identifies {
+public class Identifies_my_solution {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>(Arrays.asList("Java", "Python", "Python", "Ruby", "Ruby", "C#"));
         ArrayList<String> uniqueElements = new ArrayList<>(list);

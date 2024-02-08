@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class items {
+public class items_my_solution {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>(Arrays.asList("Apple", "Banana", "Apple", "Cherry"));
         ArrayList<String> listUniqeWord = new ArrayList<>();
