@@ -6,9 +6,4 @@ public class Virginia extends State{
         super(name, abbreviation, politicalParty, governor, senator, population);
     }
 
-    public static void main(String[] args) {
-
-        Virginia virginia = new Virginia("Virginia", "VA", "Republican", "Glenn Youngkin", "Mark Warner", 8631393);
-        System.out.println(virginia.toString());
-    }
 }
