@@ -1,6 +1,6 @@
 package day13_practice_Inheritance;
 
-public class CydeoStudent extends StudentSubclass {
+public class CydeoStudent extends Student {
 
     private int batchNumber;
     private int groupNumber;

@@ -10,12 +10,13 @@ public class StudentClients {
         cydeoStudent.study();
 
         GraduateStudent graduateStudent = new GraduateStudent("Jane", 24,"F", "876",
-                "IT", 'A', "UMD" );
+                "IT", 'A', "MIT" );
         System.out.println(graduateStudent.toString());
         graduateStudent.study();
 
         UndergraduateStudent undergraduateStudent = new UndergraduateStudent("Kate", 28, "F", "546",
                 "IT", 'B', "UMD");
         System.out.println(undergraduateStudent);
+        undergraduateStudent.study();
     }
 }

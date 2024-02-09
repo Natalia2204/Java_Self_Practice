@@ -1,16 +1,15 @@
 package day13_practice_Inheritance;
 
-public class UndergraduateStudent extends StudentSubclass {
+public class UndergraduateStudent extends Student {
 
 
     public UndergraduateStudent(String name, int age, String gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
         super(name, age, gender, studentId, fieldOfStudy, grade, schoolName);
     }
 
-    public static void main(String[] args) {
-        UndergraduateStudent undergraduateStudent = new UndergraduateStudent("Tom", 24, "M","734D", "IT", 'B',"UMD");
-        System.out.println(undergraduateStudent.toString());
-        undergraduateStudent.study();
+    @Override
+    public void study() {
+        super.study();
     }
 }
 /*

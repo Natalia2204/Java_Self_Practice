@@ -1,6 +1,6 @@
 package day13_practice_Inheritance;
 
-public class StudentSubclass extends StudentParentClass {
+public class Student extends PersonParentClass {
 
     private String studentId;
     private String fieldOfStudy;
@@ -8,17 +8,17 @@ public class StudentSubclass extends StudentParentClass {
     private String schoolName;
 
     public static void main(String[] args) {
-        StudentSubclass student = new StudentSubclass("jane", 22, "F","2678","IT", 'A',"UMD");
+        Student student = new Student("jane", 22, "F","2678","IT", 'A',"UMD");
 
         System.out.println(student.toString());
         student.study();
     }
 
-    public StudentSubclass(String name, int age, String gender) {
+    public Student(String name, int age, String gender) {
         super(name, age, gender);
     }
 
-    public StudentSubclass(String name, int age, String gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
+    public Student(String name, int age, String gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
         super(name, age, gender);
         this.studentId = studentId;
         this.fieldOfStudy = fieldOfStudy;
@@ -59,8 +59,8 @@ public class StudentSubclass extends StudentParentClass {
     }
 
     public void study(){
-        System.out.println("Student's  " + getName() +
-                " school " + schoolName);
+        System.out.println( getName() +
+                " " + schoolName);
     }
     @Override
     public String toString() {

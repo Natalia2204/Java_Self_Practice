@@ -1,12 +1,12 @@
 package day13_practice_Inheritance;
 
-public class StudentParentClass {
+public class PersonParentClass {
 
     private String name;
     private int age;
     private String gender;
 
-    public StudentParentClass(String name, int age, String gender) {
+    public PersonParentClass(String name, int age, String gender) {
         if (name == null || name.isEmpty() || name.isBlank() || gender == null || gender.isEmpty() || gender.isBlank()) {
             System.err.println("The name, gender  must not be null, empty, or blank.");
             System.exit(1);
