@@ -35,6 +35,9 @@ public abstract class Car {
         if  (model == null || model.isEmpty()) {
             throw new RuntimeException("Model must not be null or empty");
         }
+        if  (year < 1886) {
+            throw new RuntimeException("Year must not be less than 1886");
+        }
         this.make = make;
         this.model = model;
         this.year = year;
